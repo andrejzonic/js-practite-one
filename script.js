@@ -1,15 +1,15 @@
-var row = 1;
 
 var entry = document.getElementById("entry");
 entry.addEventListener("click", displayDetails);
 
+var row = 1;
 
 function displayDetails() {
     var name = document.getElementById("Ime").value;
     var address = document.getElementById("Adresa").value;
     var phone = document.getElementById("Telefon").value;
 
-    if(!Ime || !Adresa || !Telefon) {
+    if(!name || !address || !phone) {
         alert("Molim vas popunite sva polja!");
         return;
     }
@@ -22,9 +22,9 @@ function displayDetails() {
     var cell2 = newRow.insertCell(1);
     var cell3 = newRow.insertCell(2);
 
-    cell1.innerHTML = Ime;
-    cell2.innerHTML = Adresa;
-    cell3.innerHTML = Telefon;
+    cell1.innerHTML = name;
+    cell2.innerHTML = address;
+    cell3.innerHTML = phone;
 
     row++;
 
