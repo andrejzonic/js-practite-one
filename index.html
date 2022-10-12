@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekat</title>
-    
+    <script defer src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
 </head>
 <body>
-   
-        
+
+    
+      
     <!--Code to get multiple students and display them in a table-->
 
+    
     <div id="container">
+
         <div id="nameDiv" class="input">Ime: <input id="Ime" type="text" placeholder="Andrej Zonic"/></div>
         <div class="input">Adresa: <input id="Adresa" type="text" placeholder="Isidore Sekulic 3, Brcko"/></div>
         <div class="input">Telefon: <input id="Telefon" type="text" placeholder="066 666 666"/></div>
         <button id="entry">Input entry</button>
+    
     </div>
 
     <table id="display">
@@ -27,7 +31,65 @@
             <th>Adresa</th>
             <th>Telefon</th>
         </tr>
+
+        <tr>
+            <th>Michael</th>
+            <th>257 Smith Rd
+                Carson, Mississippi(MS),</th>
+            <th>(601) 943-6386</th>
+        </tr>
+
+        <tr>
+            <th>Jon</th>
+            <th>106 Leonard Ln
+                Crescent City, Florida(FL),</th>
+            <th>(386) 698-4950</th>
+        </tr>
+
+        <tr>
+            <th>Tom</th>
+            <th>695 Trucker Dr
+                Ararat, Virginia(VA)</th>
+            <th>(276) 251-5307</th>
+        </tr>
+
+        <tr>
+            <th>James</th>
+            <th>Rices Mill Rd
+                Wyncote, Pennsylvania(PA)</th>
+            <th>(215) 277-5168</th>
+        </tr>
+
+        <tr>
+            <th>Ron</th>
+            <th>Northside St
+                Canton, North Carolina(NC)</th>
+            <th>(828) 648-8750</th>
+        </tr>
+
+        <tr>
+            <th>Bryan</th>
+            <th>Union Ave
+                Long Branch, New Jersey(NJ)</th>
+            <th>(732) 229-2403</th>
+        </tr>
     </table>
     <script type="text/javascript" src="script.js"></script>
+
+    <form action="" id="myform" onsubmit="addNewUser(event)">
+        <input type="text" class="form-control" placeholder="Ime" id="Ime">
+        <input type="text" class="form-control" placeholder="Adresa" id="Adresa">
+        <input type="text" class="form-control" placeholder="Telefon " id="Telefon">
+    
+  
+        <br>
+  
+        <input type="submit" value="submit" id="">
+  
+      
+      </form>
+
+    
+    
 </body>
 </html>
