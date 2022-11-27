@@ -18,11 +18,11 @@
     
     <div id="container">
 
-        <div id="nameDiv" class="input">Ime: <input id="Ime" type="text" placeholder="Andrej Zonic"/></div>
-        <div class="input">Adresa: <input id="Adresa" type="text" placeholder="Isidore Sekulic 3, Brcko"/></div>
-        <div class="input">Telefon: <input id="Telefon" type="text" placeholder="066 666 666"/></div>
+        <div id="nameDiv" class="input">Ime: <input id="Ime" type="text" placeholder=></div>
+        <div class="input">Adresa: <input id="Adresa" type="text" placeholder=></div>
+        <div class="input">Telefon: <input id="Telefon" type="text" placeholder=></div>
         <button id="entry">Input entry</button>
-    
+        
     </div>
 
     <table id="display">
@@ -60,34 +60,66 @@
             <th>(215) 277-5168</th>
         </tr>
 
-        <tr>
-            <th>Ron</th>
-            <th>Northside St
-                Canton, North Carolina(NC)</th>
-            <th>(828) 648-8750</th>
-        </tr>
-
-        <tr>
-            <th>Bryan</th>
-            <th>Union Ave
-                Long Branch, New Jersey(NJ)</th>
-            <th>(732) 229-2403</th>
-        </tr>
+        
     </table>
-    <script type="text/javascript" src="script.js"></script>
 
-    <form action="" id="myform" onsubmit="addNewUser(event)">
-        <input type="text" class="form-control" placeholder="Ime" id="Ime">
-        <input type="text" class="form-control" placeholder="Adresa" id="Adresa">
-        <input type="text" class="form-control" placeholder="Telefon " id="Telefon">
+    <!-- HTML element to iterate-->
+    <script type="text/javascript" src="script.js">
+
+        // Get element to be iterated
+        let constusers = 
+        document.getElementsByTagName("p");
+
+        // Use a regular for loop
+        for(let i = 0; i < constusers.length; i++) {
+
+        // Print the current element
+        console.log(constusers[i]);
+
+        }
+
+    </script>
+
+<div id="users">
+    <input class="search" placeholder="Search" />
+    <button class="sort" data-sort="name">
+      Sort by name
+    </button>
+    <table>
+      <!-- IMPORTANT, class="list" have to be at tbody -->
+      <tbody class="list">
+        <tr>
+          <td class="name">Jonny Stromberg</td>
+          <td class="address">3680 Hardman Road</td>
+          <td class="phone">802-490-3750</td>
+        </tr>
+        <tr>
+          <td class="name">Jonas Arnklint</td>
+          <td class="address">919 Clarksburg Park Road</td>
+          <td class="phone">928-349-6810</td>
+        </tr>
+        <tr>
+          <td class="name">Martina Elm</td>
+          <td class="address">3032 Jerry Toth Drive</td>
+          <td class="phone">907-299-5121</td>
+        </tr>
+        <tr>
+          <td class="name">Gustaf Lindqvist</td>
+          <td class="address">173 Archwood Avenue</td>
+          <td class="phone">307-840-1476</td>
+        </tr>
+        <tr>
+            <td class="name">Sahil Pennington</td>
+            <td class="address">1526 Meadow View Drive</td>
+            <td class="phone">860-202-4552</td>
+          </tr>
+      </tbody>
+    </table>
+  
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
     
-  
-        <br>
-  
-        <input type="submit" value="submit" id="">
-  
-      
-      </form>
 
     
     
